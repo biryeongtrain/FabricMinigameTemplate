@@ -16,6 +16,11 @@ repositories {
         name = 'Nucleoid'
         url = 'https://maven.nucleoid.xyz'
     }
+    // GitHub 저장소 기반 라이브러리 배포(JitPack)
+    maven {
+        name = 'JitPack'
+        url = 'https://jitpack.io'
+    }
     mavenCentral()
 }
 
@@ -59,6 +64,11 @@ dependencies {
 
     // ─── Fabric Permissions API (JiJ로 포함) ───
     modImplementation include("me.lucko:fabric-permissions-api:${project.fabric_permissions_api_version}")
+
+    // ─── 외부 라이브러리 프로젝트 (Composite Build + JiJ) ───
+    modImplementation include("com.github.biryeongtrain:RGBMapUtils:${project.rgbmaputils_version}")
+    modImplementation include("com.github.biryeongtrain:DialogUtils:${project.dialogutils_version}")
+    modImplementation include("com.github.Uni0305:NBTtooltips:${project.nbttooltips_version}")
 }
 
 processResources {
