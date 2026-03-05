@@ -30,3 +30,4 @@ run/
 *.class
 *.jar
 !gradle/wrapper/gradle-wrapper.jar
+.gradle-user/

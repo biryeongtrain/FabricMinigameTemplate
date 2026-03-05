@@ -38,11 +38,8 @@ Minecraft **1.21.8 Fabric 서버 전용** 미니게임 모드 템플릿.
 
 ### 호환성 주의
 
-- `DialogUtils` 버전이 `1.7.2+1.21.9`라서, 베이스 타겟(`1.21.8`)과 마이너가 다름
-- 운이 좋으면 그대로 돌아가고, 아니면 런타임/매핑 충돌이 난다
-- 충돌 시 우선순위:
-  1. `DialogUtils` 버전 다운그레이드
-  2. 전체 프로젝트를 1.21.9로 올리기
+- `DialogUtils`는 `com.github.Kardane:DialogUtils:v1.7.2-mc1.21.8` 백포팅 버전 기준으로 고정
+- 베이스 타겟(`1.21.8`)과 맞춘 상태라, 기존 `1.21.9` 마이너 불일치 리스크 제거
 
 ## 3. 포함 라이브러리
 
@@ -80,8 +77,9 @@ Minecraft **1.21.8 Fabric 서버 전용** 미니게임 모드 템플릿.
 |---|---|---|
 | fabric-permissions-api | 0.4.0 | `me.lucko:fabric-permissions-api` |
 | RGBMapUtils | 1.0.0 | `com.github.biryeongtrain:RGBMapUtils` |
-| DialogUtils | 1.7.2+1.21.9 | `com.github.biryeongtrain:DialogUtils` |
+| DialogUtils | v1.7.2-mc1.21.8 | `com.github.Kardane:DialogUtils` |
 | NBTtooltips | 0.1.4-SNAPSHOT-5+1.21.8 | `com.github.Uni0305:NBTtooltips` |
+| DisguiseLib | v1.21.8.1 | `com.github.Kardane:DisguiseLib` |
 
 ## 4. 프로젝트 구조
 

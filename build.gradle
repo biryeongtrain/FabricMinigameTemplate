@@ -65,10 +65,11 @@ dependencies {
     // ─── Fabric Permissions API (JiJ로 포함) ───
     modImplementation include("me.lucko:fabric-permissions-api:${project.fabric_permissions_api_version}")
 
-    // ─── 외부 라이브러리 프로젝트 (Composite Build + JiJ) ───
+    // ─── 외부 라이브러리 (JitPack + JiJ) ───
     modImplementation include("com.github.biryeongtrain:RGBMapUtils:${project.rgbmaputils_version}")
-    modImplementation include("com.github.biryeongtrain:DialogUtils:${project.dialogutils_version}")
+    modImplementation include("com.github.Kardane:DialogUtils:${project.dialogutils_version}")
     modImplementation include("com.github.Uni0305:NBTtooltips:${project.nbttooltips_version}")
+    modImplementation include("com.github.Kardane:DisguiseLib:${project.disguiselib_version}")
 }
 
 processResources {
